@@ -1,0 +1,21 @@
+{% load static from static files %}
+<a href="{% url 'mario' %}"<mario</a>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+
+  </div>
+  </body>
+        <div class ='SmashChars'>
+          {% for SmashChar in Smashchars %}
+          {% endfor %}
+
+        <h1>{{SmashChars.character_name}}</h1>
+          <p>{{SmashChars.description}}</p>
+          <img src ='{% static SmashChars.image %}'>
+
+  </div>
+  </div>
