@@ -21,7 +21,7 @@ from SmashApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('SmashApp.urls')),
-    #path('mario/',views.Smashmario),
+    path('mario/',views.SmashMario),
     path('about/', views.about),
     path('Captain_Falcon/',views.Captain_Falcon),
 

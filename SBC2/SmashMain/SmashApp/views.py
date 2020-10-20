@@ -12,4 +12,6 @@ def SmashMario(request):
 def about(request):
     return render(request, "SmashApp/about.html")
 def Captain_Falcon(request):
-    return render(request, "SmashApp/falcon.html")
+    Smashfun= SmashChars.objects.all()
+    return render(request, "SmashApp/falcon.html",
+                {'Smashfun':Smashfun})

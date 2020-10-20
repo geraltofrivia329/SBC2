@@ -10,12 +10,13 @@
   </div>
   </body>
         <div class ='SmashChars'>
-          {% for SmashChar in Smashchars %}
+          {{ Smashfun }}
+          {% for Smashfun in Smashfun %}
+
+
+        <h1>{{Smashfun.character_name}}</h1>
+          <p>{{Smashfun.description}}</p>
+          <img src ='{% static Smashfun.image %}'>
           {% endfor %}
-
-        <h1>{{SmashChars.character_name}}</h1>
-          <p>{{SmashChars.description}}</p>
-          <img src ='{% static SmashChars.image %}'>
-
   </div>
   </div>
